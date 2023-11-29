@@ -6,7 +6,7 @@ from django.http import HttpResponse
 from django.template.loader import render_to_string
 from articles.models import Article
 
-# Actually Django acts like MVT system
+# Actually Django acts like MVT(Models Views Templates) system
 def home_view(request):
     """
     Take in a request(Django sends request)
