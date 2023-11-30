@@ -7,12 +7,13 @@ from django.template.loader import render_to_string
 from articles.models import Article
 
 # Actually Django acts like MVT(Models Views Templates) system
-def home_view(request):
+def home_view(request, *args, **kwargs):
     """
     Take in a request(Django sends request)
     Return HTML as a response(We pick to return the response)
     """
-
+    print(args, kwargs)
+    print(id)
     random_article_id = random.randint(1, 4)
 
     # Get data from database
