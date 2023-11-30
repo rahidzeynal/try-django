@@ -17,8 +17,9 @@ def home_view(request):
 
     # Get data from database
     article_obj = Article.objects.get(id=random_article_id)
-
+    article_query_set = Article.objects.all()
     context = {
+        "object_list": article_query_set,
         "article_obj": article_obj,
         "title": article_obj.title,
         "id": article_obj.id,
