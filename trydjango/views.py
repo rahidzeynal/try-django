@@ -12,8 +12,8 @@ def home_view(request, *args, **kwargs):
     Take in a request(Django sends request)
     Return HTML as a response(We pick to return the response)
     """
-    print(args, kwargs)
-    print(id)
+    # print(args, kwargs)
+    # print(id)
     random_article_id = random.randint(1, 4)
 
     # Get data from database
